@@ -5,7 +5,8 @@
 }
 
 nav{
-    position: absolute;
+    z-index: 999;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,18 +54,18 @@ nav{
     transition: all 0.3s ease-in;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1200px){
     .nav-links{
         width: 50%;
     }
 }
 
-@media screen and (max-width:768px){
-    #menu,
+@media screen and (max-width:900px){
     body{
-         overflow-x: hidden;
+        overflow-x: hidden;
          width:100%;
     }
+
     .nav-links{
         position: absolute;
         right: 0;

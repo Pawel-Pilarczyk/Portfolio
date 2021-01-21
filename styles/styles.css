@@ -1,10 +1,16 @@
+#portfolio {
+  width: 100vw;
+  height: 100vh;
+  background-color: red; }
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; }
 
 nav {
-  position: absolute;
+  z-index: 999;
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -45,11 +51,10 @@ nav {
   margin: 5px;
   transition: all 0.3s ease-in; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .nav-links {
     width: 50%; } }
-@media screen and (max-width: 768px) {
-  #menu,
+@media screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
     width: 100%; }
@@ -114,7 +119,8 @@ nav {
   #home h2 {
     font-size: 3rem;
     color: white;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    text-shadow: 4px 5px 2px rgba(0, 0, 0, 0.671); }
 
 .buttons-div {
   padding-top: 1vw; }
@@ -123,7 +129,7 @@ nav {
     height: 30px;
     width: 30px;
     margin-top: 50px;
-    background-color: rgba(255, 255, 255, 0.575);
+    background-color: white;
     border: 2px solid black;
     transform: rotate(45deg); }
   .buttons-div button {
@@ -138,16 +144,23 @@ nav {
     font-weight: bold;
     letter-spacing: 3px;
     border: 4px solid #7c7c7c; }
-    .buttons-div button:hover {
-      background-color: #303030;
-      border-color: #494949; }
+  .buttons-div a:first-child button {
+    background-color: rgba(68, 0, 255, 0.678);
+    border: 4px solid #3e00e9; }
+    .buttons-div a:first-child button:hover {
+      background-color: rgba(68, 0, 255, 0.925); }
+  .buttons-div a:last-child button {
+    background-color: rgba(179, 0, 0, 0.678);
+    border: 4px solid rgba(179, 0, 0, 0.993); }
+    .buttons-div a:last-child button:hover {
+      background-color: #990000; }
 
 #icons {
   display: flex;
   position: absolute;
   right: 5%;
   bottom: 5%;
-  background-color: rgba(255, 255, 255, 0.103); }
+  background-color: rgba(255, 255, 255, 0.171); }
   #icons li {
     list-style: none; }
   #icons img {
@@ -155,9 +168,24 @@ nav {
     height: 100px;
     margin: 15px; }
 
-#about {
-  width: 100vw;
-  height: 100vh;
-  background-color: red; }
+@media screen and (max-width: 900px) {
+  #home h1 {
+    padding-top: 25vh; }
+
+  .buttons-div {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh; }
+    .buttons-div div {
+      margin: auto; }
+    .buttons-div button {
+      margin: 2%; }
+
+  #icons {
+    position: relative;
+    margin: auto;
+    right: 0;
+    bottom: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
