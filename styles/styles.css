@@ -16,7 +16,8 @@ nav {
   align-items: center;
   min-height: 8vh;
   background-color: #33333375;
-  width: 100%; }
+  width: 100%;
+  max-width: 100vw; }
 
 .logo {
   color: #e2e2e2;
@@ -98,7 +99,7 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px); }
 
 #home {
-  background-image: url(/media/pictures/bg.png);
+  background-image: url("/media/pictures/bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -145,12 +146,12 @@ nav {
     letter-spacing: 3px;
     border: 4px solid #7c7c7c; }
   .buttons-div a:first-child button {
-    background-color: rgba(68, 0, 255, 0.678);
+    background-color: rgba(68, 0, 255, 0.5);
     border: 4px solid #3e00e9; }
     .buttons-div a:first-child button:hover {
       background-color: rgba(68, 0, 255, 0.925); }
   .buttons-div a:last-child button {
-    background-color: rgba(179, 0, 0, 0.678);
+    background-color: rgba(179, 0, 0, 0.5);
     border: 4px solid rgba(179, 0, 0, 0.993); }
     .buttons-div a:last-child button:hover {
       background-color: #990000; }
@@ -168,7 +169,7 @@ nav {
     height: 100px;
     margin: 15px; }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   #home h1 {
     padding-top: 25vh; }
 
@@ -176,7 +177,7 @@ nav {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    padding-top: 5vh; }
+    padding-top: 10vh; }
     .buttons-div div {
       margin: auto; }
     .buttons-div button {
