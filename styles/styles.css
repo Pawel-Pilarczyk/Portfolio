@@ -99,7 +99,7 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px); }
 
 #home {
-  background-image: url("/media/pictures/bg.png");
+  background-image: url("../media/pictures/bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
