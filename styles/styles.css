@@ -1,12 +1,26 @@
 #portfolio {
-  width: 100vw;
-  height: 100vh;
-  background-color: red; }
+  width: 70vw;
+  margin: 0 auto;
+  padding-top: 10vh;
+  text-align: center; }
+  #portfolio > h1 {
+    font-size: 5rem; }
+  #portfolio #projects-list {
+    padding-top: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 20px; }
+    #portfolio #projects-list .project {
+      height: 10vh;
+      padding: 20px; }
 
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Bodoni Moda', serif; }
 
 nav {
   z-index: 999;
@@ -57,7 +71,6 @@ nav {
     width: 50%; } }
 @media screen and (max-width: 1024px) {
   body {
-    overflow-x: hidden;
     width: 100%; }
 
   .nav-links {
@@ -107,7 +120,8 @@ nav {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 13px 8px 22px 5px rgba(0, 0, 0, 0.59); }
   #home h1 {
     width: 60vw;
     margin: 0 auto;

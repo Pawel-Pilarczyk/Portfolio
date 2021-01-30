@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Bodoni Moda', serif;
 }
 
 nav{
@@ -63,7 +64,6 @@ nav{
 
 @media screen and (max-width:1024px){
     body{
-        overflow-x: hidden;
          width:100%;
     }
 
