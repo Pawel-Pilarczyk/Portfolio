@@ -12,7 +12,8 @@
   width: 70vw;
   margin: 0 auto;
   padding-top: 10vh;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 10vh; }
   #portfolio > h1 {
     font-size: 5rem; }
   #portfolio #projects-list {
@@ -256,5 +257,14 @@ nav {
     right: 0;
     bottom: 0;
     justify-content: space-around; } }
+#about-me {
+  background-color: #919191;
+  display: flex; }
+  #about-me > #description {
+    width: 50%;
+    height: 100%;
+    background-color: chartreuse; }
+  #about-me > #cv-photo img {
+    border-radius: 50px; }
 
 /*# sourceMappingURL=styles.css.map */

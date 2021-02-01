@@ -1,0 +1,14 @@
+#about-me{
+    background-color: rgb(145, 145, 145);
+    display: flex;
+
+    >#description{
+        width: 50%;
+        height: 100%;
+        background-color: chartreuse;
+    }
+
+    >#cv-photo img{
+        border-radius: 50px;
+    }
+}
