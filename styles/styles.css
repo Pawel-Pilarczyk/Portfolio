@@ -258,13 +258,9 @@ nav {
     bottom: 0;
     justify-content: space-around; } }
 #about-me {
-  background-color: #919191;
-  display: flex; }
-  #about-me > #description {
-    width: 50%;
-    height: 100%;
-    background-color: chartreuse; }
-  #about-me > #cv-photo img {
-    border-radius: 50px; }
+  border-top: 2px solid grey;
+  background-color: rgba(148, 148, 148, 0.26); }
+  #about-me h1 {
+    display: inline-block; }
 
 /*# sourceMappingURL=styles.css.map */
