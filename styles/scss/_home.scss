@@ -82,29 +82,11 @@
 
 }
 
-#icons{
-    display: flex;
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-    background-color: rgba(255, 255, 255, 0.171);
-
-    li{
-        list-style: none;
-    }
-
-    img{
-        width: 90px;
-        height: 100px;
-        margin: 15px;
-    }
-}
-
-
 @media only screen and (max-width:1024px) and (orientation: landscape){
 
     #home h1{
-        padding-top: 25vh;
+        padding-top: 15vh;
+        font-size: 3rem;
     }
 
     .buttons-div{
@@ -132,13 +114,12 @@
     }
 }
 
-
 @media only screen and (max-width:1024px) and (orientation: portrait){
 
     #home{
         h1{
             width: 80%;
-            padding-top: 30vh;
+            padding-top: 15vh;
             font-size: 6rem;
         }
 
@@ -160,15 +141,6 @@
             width: 500px;
             height: 105px;
         }
-    }
-
-    #icons{
-        width: 100vw;
-        position: relative;
-        margin: auto;
-        right: 0;
-        bottom: 0;
-        justify-content: space-around;
     }
 
 }

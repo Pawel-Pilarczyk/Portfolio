@@ -26,8 +26,20 @@
     text-align: center;
     padding-bottom: 10vh;
 
-    >h1{
-        font-size: 5rem;
+    >div:first-child {
+       display: flex;
+
+        div{
+            margin: 25px;
+            margin-top: 35px;;
+            width: 30vw;
+            height: 5px;
+            background-color: rgba(0, 0, 0, 0.541);
+        }
+        h1{
+            font-size: 3rem;
+            font-weight: bold;
+        }
     }
 
     #projects-list{
@@ -67,3 +79,16 @@
 }
 
 
+@media screen and (max-width:1200px){
+    #portfolio #projects-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:1024px){
+    #portfolio #projects-list{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+
+    }
+}
