@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <link rel="icon" href="http://example.com/favicon.png">
   <title>Paweł Pilarczyk - Frontend Developer</title>
 
   <meta name="description" content="The HTML5 Herald">
@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
 
 </head>
 
@@ -211,8 +211,33 @@
   <!--------------------------------  About me Ends  ------------------------------->
 
 
+  <!--------------------------------  Contact Starts  ------------------------------->
+  <div id="contact">
+    <div id="form-div">
+        <h1>Contact me</h1>
+        <form id='contact-form'>
+            <input type="email" id="e-mail" required placeholder="email"></input><br/>
+
+            <input type="tel" id="phone" placeholder="phone number" required></input><br/>
+
+            <textarea id="message" placeholder="Your message" required></textarea><br/>
+            <input id="submit" type="submit" value="Submit" ></input>
+        </form>
+    </div>
+    <div id="details">
+        <ul>
+            <h3>Contact Details</h3>
+            <li>Pawel Pilarczyk</li>
+            <li>+48 575-537-637</li>
+            <li id="email-shortcut">pawelpilarczyk1@gmail.com</li>
+        </ul>
+    </div>
+  </div>
+  <!--------------------------------  Contact Ends  ------------------------------->
+
+
   <!--------------------------------  Footer Starts ------------------------------->
-  <!--------------------------------  Footer Ends ------------------------------->
+
   <div id="footer">
       <span>
         <p>Connect:</p>
@@ -221,6 +246,7 @@
       </span>
       <h1>Paweł Pilarczyk / pawelpilarczyk1@gmail.com </h1>
   </div>
+  <!--------------------------------  Footer Ends ------------------------------->
 
 </body>
 
@@ -228,6 +254,7 @@
     <!--    Adding scripts + JQ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/contact-form.js"></script>
 
 
 </html>

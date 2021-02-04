@@ -253,10 +253,109 @@ nav {
     .buttons-div button {
       width: 500px;
       height: 105px; } }
+#contact {
+  width: 90%;
+  margin: 0 auto; }
+  #contact h1 {
+    font-size: 3rem;
+    padding-bottom: 20px; }
+  #contact > #form-div {
+    text-align: center;
+    padding-top: 100px; }
+    #contact > #form-div > form {
+      padding-bottom: 5vh; }
+      #contact > #form-div > form > input {
+        width: 80%;
+        height: 5vh;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        text-shadow: none;
+        border-radius: 10px; }
+      #contact > #form-div > form > #submit {
+        margin-top: 20px;
+        height: 75px;
+        border-radius: 15px;
+        background-color: rgba(194, 1, 1, 0.904);
+        color: white; }
+        #contact > #form-div > form > #submit:hover {
+          background-color: rgba(85, 0, 0, 0.904); }
+      #contact > #form-div > form > textarea {
+        text-shadow: none;
+        width: 80%;
+        height: 20vh;
+        font-size: 1.8rem;
+        border-radius: 10px; }
+  #contact > #details {
+    margin-top: 15px;
+    margin-bottom: 15vh;
+    padding: 60px;
+    background-color: rgba(0, 0, 0, 0.3); }
+    #contact > #details > ul {
+      text-align: center;
+      list-style: none; }
+      #contact > #details > ul > h3 {
+        font-size: 1.5rem;
+        padding-bottom: 15px; }
+      #contact > #details > ul > li {
+        width: 70%;
+        padding: 10px;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        border-bottom: 3px solid white; }
+
+@media (min-width: 860px) and (orientation: landscape) {
+  #contact {
+    contain: content;
+    width: 80%; }
+    #contact > #form-div {
+      padding-top: 40px; }
+      #contact > #form-div > form > input {
+        font-size: 1.5rem;
+        width: 70%; }
+      #contact > #form-div > form > textarea {
+        width: 70%; }
+      #contact > #form-div > form #submit {
+        width: 35%;
+        height: 40px; } }
+@media (min-width: 1280px) and (orientation: landscape) {
+  #contact {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    #contact > #form-div {
+      width: 50%;
+      border-right: 3px dashed #838383;
+      padding-top: 0; }
+    #contact > #details {
+      width: 40vw;
+      height: 25vh;
+      padding: 50px;
+      margin-top: 100px;
+      margin-left: 100px;
+      background-color: rgba(0, 0, 0, 0); }
+      #contact > #details > ul {
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.3); }
+        #contact > #details > ul > h3 {
+          font-size: 3rem;
+          padding-bottom: 10px; }
+        #contact > #details > ul > li {
+          font-size: 1.5rem;
+          width: 80%; }
+        #contact > #details > ul > li:last-child:hover {
+          border-bottom: 3px red solid;
+          cursor: pointer; } }
 #about-me {
   width: 100vw;
   background-color: rgba(148, 148, 148, 0.26);
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 10vh; }
   #about-me h1 {
     padding-top: 2vh;
     font-size: 3rem; }
@@ -285,28 +384,35 @@ nav {
   #about-me span {
     flex-direction: column; } }
 #footer {
+  height: 7vh;
   margin: auto;
   background-color: grey;
   display: flex;
   justify-content: space-between; }
   #footer > h1 {
-    padding-right: 10vw;
-    font-size: 1.5rem;
+    padding-right: 5vw;
+    font-size: 1.2rem;
     padding-top: 20px;
     color: white; }
   #footer > span {
-    padding: 10px;
+    padding: 15px;
     display: flex;
     width: 20%;
     justify-content: space-around; }
     #footer > span p {
       font-size: 2rem;
       padding-left: 10vw;
-      padding-right: 5vw; }
+      padding-right: 5vw;
+      padding-top: 5px;
+      color: white; }
     #footer > span a img {
-      width: 35px;
-      height: 35px;
+      width: 40px;
+      height: 40px;
       margin: 10px; }
+      #footer > span a img:hover {
+        background-color: black;
+        border-radius: 100%;
+        border: 1px solid black; }
 
 body {
   overflow-x: hidden; }
