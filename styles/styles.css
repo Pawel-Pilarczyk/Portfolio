@@ -258,7 +258,55 @@ nav {
   background-color: rgba(148, 148, 148, 0.26);
   text-align: center; }
   #about-me h1 {
+    padding-top: 2vh;
     font-size: 3rem; }
+  #about-me > p {
+    width: 80%;
+    padding-top: 2vh;
+    font-size: 1.5rem;
+    border-bottom: 1px solid black;
+    margin: auto; }
+  #about-me > span {
+    padding-top: 5vh;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around; }
+    #about-me > span div {
+      padding: 20px; }
+      #about-me > span div p {
+        font-size: 1.2rem; }
+      #about-me > span div img {
+        width: 100px;
+        height: 100px;
+        margin: 10px; }
+
+@media screen and (max-width: 1200px) {
+  #about-me span {
+    flex-direction: column; } }
+#footer {
+  margin: auto;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between; }
+  #footer > h1 {
+    padding-right: 10vw;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    color: white; }
+  #footer > span {
+    padding: 10px;
+    display: flex;
+    width: 20%;
+    justify-content: space-around; }
+    #footer > span p {
+      font-size: 2rem;
+      padding-left: 10vw;
+      padding-right: 5vw; }
+    #footer > span a img {
+      width: 35px;
+      height: 35px;
+      margin: 10px; }
 
 body {
   overflow-x: hidden; }

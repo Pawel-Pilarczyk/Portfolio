@@ -4,7 +4,43 @@
     text-align: center;
 
     h1{
+        padding-top: 2vh;
         font-size: 3rem;
+    }
+    >p{
+        width: 80%;
+        padding-top: 2vh;
+        font-size: 1.5rem;
+        border-bottom: 1px solid black;
+        margin: auto;
+    }
+
+    >span{
+        padding-top: 5vh;
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        div{
+            padding:20px;
+
+            p{
+                font-size: 1.2rem;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1200px){
+    #about-me span{
+        flex-direction: column;
     }
 
 }
