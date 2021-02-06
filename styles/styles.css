@@ -414,7 +414,20 @@ nav {
         border-radius: 100%;
         border: 1px solid black; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   overflow-x: hidden; }
+
+html::-webkit-scrollbar {
+  display: none; }
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
 
 /*# sourceMappingURL=styles.css.map */

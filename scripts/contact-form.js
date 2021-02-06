@@ -1,7 +1,4 @@
-// Function that handles clicking on the e-mail from the form
-function sendMeEmail(){
-    window.open('mailto:pawelpilarczyk1@gmail.com');
-}
+
 // Function that handles sending an e-mail from the form
 function sendEmailFromForm(e){
     e.preventDefault();
@@ -16,12 +13,7 @@ function sendEmailFromForm(e){
 
 
 const form = document.querySelector('#contact-form');
-const emailLink = document.getElementById('email-shortcut');
 
 form.addEventListener('submit', function(e){
     sendEmailFromForm(e);
 });
-
-emailLink.addEventListener('click',function(e){
-    sendMeEmail();
-})
