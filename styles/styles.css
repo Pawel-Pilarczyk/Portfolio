@@ -98,7 +98,7 @@ nav {
   font-weight: bold;
   font-size: 25px; }
   .nav-links a:hover {
-    color: black; }
+    border-bottom: 3px solid red; }
 
 .burger {
   display: none; }
@@ -369,21 +369,30 @@ nav {
   #about-me > span {
     padding-top: 5vh;
     margin: auto;
-    width: 80%;
+    width: 90%;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-evenly; }
     #about-me > span div {
-      padding: 20px; }
+      width: 28%; }
       #about-me > span div p {
-        font-size: 1.2rem; }
+        font-size: 1.25rem; }
       #about-me > span div img {
         width: 100px;
         height: 100px;
         margin: 10px; }
 
 @media screen and (max-width: 1200px) {
-  #about-me span {
-    flex-direction: column; } }
+  #about-me > span {
+    flex-direction: column; }
+    #about-me > span div {
+      width: 100%;
+      margin: auto;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 5vh; }
+      #about-me > span div img {
+        width: 200px;
+        height: 200px; } }
 #footer {
   height: 7vh;
   margin: auto;
