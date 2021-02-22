@@ -424,6 +424,20 @@ nav {
         border-radius: 100%;
         border: 1px solid black; }
 
+@media (max-width: 1280px) and (orientation: landscape) {
+  #footer {
+    height: 15vh; } }
+@media (max-width: 1280px) and (orientation: portrait) {
+  #footer > span {
+    width: 50%; }
+    #footer > span > p {
+      font-size: 2.5rem; }
+    #footer > span a img {
+      width: 80px;
+      height: 80px; }
+  #footer > h1 {
+    margin-left: 10%;
+    font-size: 1.5rem; } }
 html {
   scroll-behavior: smooth; }
 
