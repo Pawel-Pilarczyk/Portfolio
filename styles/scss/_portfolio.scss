@@ -51,6 +51,7 @@
         grid-gap: 20px;
 
         .project{
+            opacity: 0;
             background-color: brown;
             contain: strict;
             li{

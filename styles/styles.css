@@ -33,6 +33,7 @@
     grid-auto-rows: 300px;
     grid-gap: 20px; }
     #portfolio #projects-list .project {
+      opacity: 0;
       background-color: brown;
       contain: strict; }
       #portfolio #projects-list .project li {

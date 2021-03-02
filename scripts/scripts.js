@@ -1,3 +1,4 @@
+//Sliding nav operation
 const navSlide = () =>{
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -26,5 +27,27 @@ const navSlide = () =>{
 
 
 }
-
 navSlide();
+
+
+// ===========================================
+// ========== CSS ANIMATION OPERATE===========
+//============================================
+
+
+document.querySelector('.logo').addEventListener('click',function(){
+    console.log(window.scrollY);
+});
+
+
+
+document.addEventListener('scroll',function(){
+
+    if(window.scrollY <= 1171.25 && window.scrollY >= 1100){
+        const portfolio_el = $('.project');
+        for(let i = 0; i<portfolio_el.length; i++){
+            portfolio_el.eq(i).addClass(`animate__animated animate__fadeIn animate__delay-${i}s`).css("opacity",1);
+        }
+    }
+
+})
