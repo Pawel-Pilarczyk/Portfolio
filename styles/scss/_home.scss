@@ -10,6 +10,7 @@
     flex-direction: column;
     text-align: center;
     box-shadow: 13px 8px 22px 5px rgba(0,0,0,0.59);
+    contain: strict;
 
     h1{
         width: 60vw;

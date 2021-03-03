@@ -8,7 +8,7 @@ function sendEmailFromForm(e){
     document.getElementById('e-mail').value = "";
     document.getElementById('phone').value = "";
     document.getElementById('message').value = "";
-    window.open(`mailto:pawelpilarczyk1@gmail.com?subject=Website_Contact&body=FROM:%0D%0A_MAIL_${email}%0D%0A_PHONE_${phone}__%0D%0AMESSAGE_${message}`);
+    window.open(`mailto:pawelpilarczyk1@gmail.com?subject=Website_Contact&body=FROM:%0D%0A_EMAIL_${email}%0D%0A_PHONE_Number_${phone}__%0D%0A%0D%0AMESSAGE_${message}`);
 }
 
 
