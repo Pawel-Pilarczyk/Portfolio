@@ -54,7 +54,7 @@ document.addEventListener('scroll',function(){
 
     }else{
 
-        if(window.scrollY <= 1171.25 && window.scrollY >= 1100){
+        if(window.scrollY <= 1171.25 && window.scrollY >= 800){
 
             for(let i = 0; i<portfolio_el.length; i++){
                 portfolio_el.eq(i).addClass(`animate__animated animate__fadeIn`).css("opacity",1);

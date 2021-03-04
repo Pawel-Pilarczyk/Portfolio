@@ -56,6 +56,7 @@
             opacity: 0;
             contain: strict;
             color: white;
+            border: 1px solid grey;
             h1,h2{
                 padding-top: 10px;
             }
@@ -91,6 +92,10 @@
 
         .project2{
             background-image: url(../media/pictures/budgetary_app.PNG);
+        }
+
+        .project3{
+            background-image: url(../media/pictures/portfolio_website.PNG);
         }
     }
 }
