@@ -64,6 +64,8 @@
       background-image: url(../media/pictures/budgetary_app.PNG); }
     #portfolio #projects-list .project3 {
       background-image: url(../media/pictures/portfolio_website.PNG); }
+    #portfolio #projects-list .project4 {
+      background-image: url(../media/pictures/todolist.PNG); }
 
 .project-cover {
   background-repeat: no-repeat;
